@@ -403,9 +403,16 @@ address {
   line-height: 36px;
   letter-spacing: 0.06em;
   color: var(--main-txt-cl);
+  margin-top: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .project-uppertitle {
   font-size: 16px;
   line-height: calc(30 / 16);
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-top: 4px;
+  padding-bottom: 20px;
 }
