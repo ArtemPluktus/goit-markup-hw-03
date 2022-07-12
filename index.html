@@ -64,26 +64,26 @@
       <section class="about section">
         <div class="container">
           <h2 class="section-title visually-hidden">Сильные качества</h2>
-          <ul class="about-list list">
-            <li class="about-item">
+          <ul class="about-list list card-set">
+            <li class="about-item card-item">
               <h3 class="about-uppertitle">Внимание к деталям</h3>
               <p class="about-text">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li class="about-item">
+            <li class="about-item card-item">
               <h3 class="about-uppertitle">Пунктуальность</h3>
               <p class="about-text">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li class="about-item">
+            <li class="about-item card-item">
               <h3 class="about-uppertitle">Планирование</h3>
               <p class="about-text">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li class="about-item">
+            <li class="about-item card-item">
               <h3 class="about-uppertitle">Современные технологии</h3>
               <p class="about-text">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
@@ -95,9 +95,9 @@
       <!-- Work section -->
       <section class="work section">
         <div class="container">
-          <h2 class="section-title work-title">Чем мы занимаемся</h2>
-          <ul class="work-list list">
-            <li class="work-item">
+          <h2 class="section-title">Чем мы занимаемся</h2>
+          <ul class="work-list list card-set">
+            <li class="work-item card-item">
               <img
                 src="./images/work/box1.jpg"
                 alt="Написание программного кода"
@@ -106,7 +106,7 @@
                 class="work-img"
               />
             </li>
-            <li class="work-item">
+            <li class="work-item card-item">
               <img
                 src="./images/work/box2.jpg"
                 alt="Разработка мобильных приложений"
@@ -115,7 +115,7 @@
                 class="work-img"
               />
             </li>
-            <li class="work-item">
+            <li class="work-item card-item">
               <img
                 src="./images/work/box3.jpg"
                 alt="дизайнерский подбор цветового решения"
@@ -128,11 +128,11 @@
         </div>
       </section>
       <!-- Team section -->
-      <section class="team">
+      <section class="team section">
         <div class="container">
           <h2 class="section-title team-title">Наша команда</h2>
-          <ul class="team-list list">
-            <li class="team-item">
+          <ul class="team-list list card-set">
+            <li class="team-item card-item">
               <img
                 src="./images/team/igor.jpg"
                 alt="Игорь Демьяненко"
@@ -140,10 +140,12 @@
                 height="260"
                 class="team-img"
               />
-              <h3 class="team-uppertitle">Игорь Демьяненко</h3>
-              <p lang="en" class="team-text">Product Designer</p>
+              <div class="team-wrapper">
+                <h3 class="team-uppertitle">Игорь Демьяненко</h3>
+                <p lang="en" class="team-text">Product Designer</p>
+              </div>
             </li>
-            <li class="team-item">
+            <li class="team-item card-item">
               <img
                 src="./images/team/olga.jpg"
                 alt="Ольга Репина"
@@ -151,10 +153,12 @@
                 height="260"
                 class="team-img"
               />
-              <h3 class="team-uppertitle">Ольга Репина</h3>
-              <p lang="en" class="team-text">Frontend Developer</p>
+              <div class="team-wrapper">
+                <h3 class="team-uppertitle">Ольга Репина</h3>
+                <p lang="en" class="team-text">Frontend Developer</p>
+              </div>
             </li>
-            <li class="team-item">
+            <li class="team-item card-item">
               <img
                 src="./images/team/nikolai.jpg"
                 alt="Николай Тарасов"
@@ -162,10 +166,12 @@
                 height="260"
                 class="team-img"
               />
-              <h3 class="team-uppertitle">Николай Тарасов</h3>
-              <p lang="en" class="team-text">Marketing</p>
+              <div class="team-wrapper">
+                <h3 class="team-uppertitle">Николай Тарасов</h3>
+                <p lang="en" class="team-text">Marketing</p>
+              </div>
             </li>
-            <li class="team-item">
+            <li class="team-item card-item">
               <img
                 src="./images/team/mihail.jpg"
                 alt="Михаил Ермаков"
@@ -173,8 +179,10 @@
                 height="260"
                 class="team-img"
               />
-              <h3 class="team-uppertitle">Михаил Ермаков</h3>
-              <p lang="en" class="team-text">UI Designer</p>
+              <div class="team-wrapper">
+                <h3 class="team-uppertitle">Михаил Ермаков</h3>
+                <p lang="en" class="team-text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -183,7 +191,7 @@
     <!-- Footer section -->
     <footer class="footer">
       <div class="container">
-        <a href="./index.html" lang="en" class="logo link"
+        <a href="./index.html" lang="en" class="logo link logo-footer"
           >Web<span class="logo-white">Studio</span></a
         >
         <address class="address">

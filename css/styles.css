@@ -12,9 +12,12 @@
   /* Bg colors */
   --dark-bg-cl: #2f303a;
   --grey-bg-cl: #f5f4fa;
-  /* Others */
+  /* Border */
   --border-cl: #ececec;
   --border-sec-cl: #eeeeee;
+  /* Others */
+  --indent: 30px;
+  --items: 4;
 }
 
 /* Html */
@@ -71,7 +74,7 @@ ol {
 img {
   display: block;
   max-width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .section {
@@ -87,6 +90,8 @@ img {
   text-align: center;
 
   color: var(--main-txt-cl);
+
+  margin-bottom: 50px;
 }
 
 .container {
@@ -103,12 +108,24 @@ img {
   font-family: inherit;
   font-size: 16px;
   cursor: pointer;
+  border: none;
 }
 
 .btn:hover,
 .btn:focus {
   color: var(--wh-txt-cl);
   background-color: var(--accent-txt-cl);
+}
+
+.card-set {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--indent);
+}
+
+.card-item {
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 
 /* Logo */
@@ -187,14 +204,19 @@ header.header {
   gap: 50px;
 }
 
+.header-contact {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 /* Main */
 
 /* Hero section */
 .hero {
-  background-color: #2f303a;
+  background-color: var(--dark-bg-cl);
   text-align: center;
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -241,38 +263,22 @@ header.header {
   margin: -1px;
 }
 
-.about-list {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-
-.about-item {
-  width: 300px;
-}
-
 .about-uppertitle {
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
   text-transform: uppercase;
   color: var(--main-txt-cl);
+  margin-bottom: 10px;
 }
 
 /* Work section */
 .work {
-  background-color: var(--btn-txt-cl);
   padding-top: 0;
 }
 
-.work-title {
-  margin-bottom: 50px;
-}
-
-.work-list {
-  display: flex;
-  align-items: center;
-  gap: 30px;
+.work-item {
+  --items: 3;
 }
 
 /*  Team section */
@@ -286,18 +292,15 @@ header.header {
   margin-bottom: 50px;
 }
 
-.team-list {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-
 .team-item {
   background-color: var(--wh-txt-cl);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  padding-bottom: 30px;
+}
+
+.team-wrapper {
+  padding: 30px;
 }
 
 .team-text,
@@ -310,11 +313,7 @@ header.header {
 .team-uppertitle {
   font-weight: 500;
   color: var(--main-txt-cl);
-  margin-top: 30px;
-}
-
-.team-text {
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* Footer section */
@@ -324,11 +323,16 @@ header.header {
   padding-bottom: 60px;
 }
 
+.logo-footer {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
 address {
   display: block;
   font-style: normal;
 
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 .address-item {
@@ -348,11 +352,6 @@ address {
 }
 
 /* Portfolio */
-
-.portfolio .container {
-  margin-top: 94px;
-  margin-bottom: 94px;
-}
 
 /* Filter section */
 .filter-list {
@@ -384,15 +383,14 @@ address {
 }
 
 /* Project */
-.project-list {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 30px;
-}
 
 .project-item {
   width: 370px;
+  --items: 3;
+}
+
+.project-wrapper {
+  padding: 20px 24px;
   background: var(--wh-txt-cl);
   border: 1px solid var(--border-sec-cl);
 }
@@ -403,16 +401,10 @@ address {
   line-height: 36px;
   letter-spacing: 0.06em;
   color: var(--main-txt-cl);
-  margin-top: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
+  margin-bottom: 4px;
 }
 
 .project-uppertitle {
   font-size: 16px;
   line-height: calc(30 / 16);
-  padding-left: 24px;
-  padding-right: 24px;
-  margin-top: 4px;
-  padding-bottom: 20px;
 }
